@@ -16,13 +16,22 @@
 
 :root {
     --color-dark :hsl(252,30%,17%) ;
-    --color-light :hsl(252,30%,95%) ;
+    --color-light :hsl(257, 10%, 87%) ;
     --color-gray :hsl(252,15%,65%) ;
     --color-primary :hsl(252,75%,60%) ;
     --color-secondary :hsl(252,100%,90%) ;
     --color-success :hsl(252,96%,65%) ;
     --color-danger :hsl(0,95%,65%) ;
     --color-black :hsl(252,30%,10%) ;
+    --color-white : hsl(0, 0%, 100%) ;
+
+    --border-radius : 2rem ; 
+    --card-border-radius : 1rem ;
+    --btn-padding : 0.6rem 1rem ;
+    --card-padding : 1rem ;
+    --search-padding : 0.6rem 4rem ;
+
+
 }
 
 
@@ -34,11 +43,58 @@ body {
     overflow-x: hidden;
 }
 
-/* General Style */
+
+/* Gaya Sifat */
+.text-bold {
+    font-weight: 500;
+}
+
+.text-muted {
+    color: var(--color-gray);
+}
+
+/* General Style Navigasi */
+
+nav {
+    width: 100%;
+    background: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
 
 .container {
     width:80% ;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .searchBar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+.container .searchBar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark) ;
+}
+
+nav .searchBar input[type="search"]::placeholder {
+    color: var(--color-gray);
+}
+
+
+nav .buatContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;   
 }
 
 .profilPic {
@@ -51,5 +107,25 @@ body {
 .profilPic img {
     display: block;
     width: 100%;
-    
+
 }
+
+.Btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem; 
+}
+
+.Btn:hover {
+    opacity: 0.8;
+}
+
+.primary {
+    background: var(--color-primary);
+    color: white;
+}
+
