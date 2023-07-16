@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Style Default */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+/* Variabel Root */
+
+:root {
+    --color-dark :hsl(252,30%,17%) ;
+    --color-light :hsl(252,30%,95%) ;
+    --color-gray :hsl(252,15%,65%) ;
+    --color-primary :hsl(252,75%,60%) ;
+    --color-secondary :hsl(252,100%,90%) ;
+    --color-success :hsl(252,96%,65%) ;
+    --color-danger :hsl(0,95%,65%) ;
+    --color-black :hsl(252,30%,10%) ;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+/* General Style */
+
+.container {
+    width:80% ;
+    margin: 0 auto;
+}
+
+.profilPic {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profilPic img {
+    display: block;
+    width: 100%;
+    
+}
