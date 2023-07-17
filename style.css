@@ -27,9 +27,14 @@
 
     --border-radius : 2rem ; 
     --card-border-radius : 1rem ;
-    --btn-padding : 0.6rem 3rem ;
-    --card-padding : 1rem ;
+    --btn-padding : 0.8rem 4rem ;
+    --card-padding : 0.7rem ;
     --search-padding : 0.6rem 4rem ;
+
+    /* Sticky Position */
+
+    --sticky-top-left : 5.4rem ;
+    --sticky-top-right : -18rem ;
 
 
 }
@@ -98,8 +103,7 @@ nav .buatContainer {
 }
 
 .profilPic {
-    width: 2.7rem;
-    aspect-ratio: 1/1;
+    width: 3rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -107,10 +111,12 @@ nav .buatContainer {
 .profilPic img {
     display: block;
     width: 100%;
+    
 
 }
 
 .Btn {
+    text-align: center;
     display: inline-block;
     padding: var(--btn-padding);
     font-weight: 500;
@@ -129,3 +135,81 @@ nav .buatContainer {
     color: white;
 }
 
+
+/* ========================= Main section style =====================*/
+
+/* Default style */
+
+main {
+    position: relative;
+    top: 5.4rem;
+}
+
+
+main .container {
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+/* ============================ sidebar menu ===================== */
+
+main .container .kiri {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+
+}
+
+main .container .kiri .profilBox {
+    padding: var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+/*================= Sidebar ================= */
+
+main .container .kiri .bagMenu {
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+
+
+
+.menu-item span {
+    display: flex;
+    cursor: pointer;
+    height: 3.5rem;
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.menu-item span:hover {
+    background: var(--color-light);
+}
+
+.menu-item span i {
+    font-size: 1.7rem;
+    color: gray;
+    margin-left: 0.4rem;
+    position: relative;
+}
+
+.menu-item span i .jumlahNotif {
+    background: var(--color-danger);
+    color: white;
+    font-size: 0.7rem;
+    width: fit-content;
+    border-radius: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    position: absolute;
+    top: -0.2rem;
+    right: -0.6rem;
+}
