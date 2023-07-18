@@ -302,7 +302,11 @@ main .container .kiri .bagMenu .sideBar {
 
 
 
-/* Bagian Tengah */
+/* ===================== Bagian Tengah ====================================== */
+
+.tengah {
+    overflow: hidden;
+}
 
 
 .tengah .storiBox  {
@@ -323,7 +327,24 @@ main .container .kiri .bagMenu .sideBar {
     align-items: center;
     color: white;
     font-size: 0.75rem;
-    width: 6rem;
+    position: relative;
+}
+
+.tengah .storiBox .story::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(transparent , rgba(0,0,0,1));
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    border-radius: var(--card-border-radius);
+    
+}
+
+.tengah .storiBox .story .nama {
+    z-index: 2;
 }
 
 .tengah .storiBox .story:nth-child(1) {
@@ -372,10 +393,20 @@ main .container .kiri .bagMenu .sideBar {
 }
 
 
+.tengah .storiBox .story .profilPic {
+    border: 3px solid var(--color-primary);
+}
 
+/* ========== Bagian buat post ================ */
 
+.tengah .buatPost {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+    background: var(--color-white);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
 
-/* 
-.tengah .story p {
-    text
-} */
+}
