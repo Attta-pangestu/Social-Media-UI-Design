@@ -73,7 +73,7 @@ nav {
     width:80% ;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -106,11 +106,16 @@ nav .buatContainer {
     width: 3rem;
     border-radius: 50%;
     overflow: hidden;
+    
+    /* position: center; */
+    
 }
 
 .profilPic img {
     display: block;
     width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
     
 
 }
@@ -149,7 +154,7 @@ main {
 main .container {
     display: grid;
     grid-template-columns: 18vw auto 20vw;
-    column-gap: 2rem;
+    column-gap: 1rem;
     position: relative;
 }
 
@@ -264,8 +269,6 @@ main .container .kiri .bagMenu .sideBar {
 }
 
 
-
-
 /* ============== Notifikasi Popup ======================== */
 
 #notifikasiId .notifikasi-popup {
@@ -276,7 +279,7 @@ main .container .kiri .bagMenu .sideBar {
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
-    
+    display: none;
 }
 
 .kiri .notifikasi-popup::before {
@@ -296,3 +299,83 @@ main .container .kiri .bagMenu .sideBar {
     flex-wrap: nowrap;
     
 }
+
+
+
+/* Bagian Tengah */
+
+
+.tengah .storiBox  {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 12rem;
+    
+    
+} 
+
+.tengah .storiBox .story {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+    width: 6rem;
+}
+
+.tengah .storiBox .story:nth-child(1) {
+    background: url(https://i.pinimg.com/originals/7f/1b/fd/7f1bfddfce6d679a37e17e627970a396.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tengah .storiBox .story:nth-child(2) {
+    background: url(https://i.pinimg.com/736x/2a/a8/b3/2aa8b3c3a9b2a9c1bd2f84c02b883d50.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.tengah .storiBox .story:nth-child(3) {
+    background: url(https://i.pinimg.com/736x/9c/a1/5f/9ca15f2a1705a52585d4cb2c918c4777.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.tengah .storiBox .story:nth-child(4) {
+    background: url(https://i.pinimg.com/736x/e5/e7/86/e5e786a31933d05ba1aef829f6d6a67a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.tengah .storiBox .story:nth-child(5) {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTChpJapg0D82xeQIcCoqF8zpQxJavFf-Rin6JOAkR9J3YxFYM_N2njDxTUVz4wIYltEuQ&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
+.tengah .storiBox .story:nth-child(6) {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiP-sGkYrJvIzdauDjn1bi2iQ49iOlFwpWtg&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
+.tengah .storiBox .story:nth-child(7) {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjP4dMGR8CX16O3xkzy8zLFxyFDAqvU2oRucePiGKELiT_tv8Kpl-DficqfG6T90Hqk4w&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
+
+.tengah .storiBox .story:nth-child(8) {
+    background: url(https://i.pinimg.com/736x/e5/e7/86/e5e786a31933d05ba1aef829f6d6a67a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+/* 
+.tengah .story p {
+    text
+} */
