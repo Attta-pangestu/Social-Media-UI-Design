@@ -455,7 +455,38 @@ main .container .kiri .bagMenu .sideBar {
 .feedBox .feed .btnAksi {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
 }
+
+.feedBox .feed .liked {
+    display: flex;
+}
+
+.feed .liked span {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-left: -0.5rem;
+    margin-top: -0.3rem;
+    overflow: hidden;
+    display: block;
+    border: 2px solid var(--color-white);
+}
+
+.liked span img {
+    width: 100%;
+}
+
+.feed .liked span:first-child {
+    margin-left: 0;
+}
+
+.feed .caption p {
+    margin-left: 0;
+}
+
 
 
 
