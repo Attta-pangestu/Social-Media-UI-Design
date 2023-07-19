@@ -408,5 +408,28 @@ main .container .kiri .bagMenu .sideBar {
     background: var(--color-white);
     padding: 0.4rem var(--card-padding);
     border-radius: var(--border-radius);
+}
 
+.tengah .buatPost input[type="text"] {
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
+
+} 
+
+/* ==================== Feed ======================= */
+.tengah .feedBox .feed {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.feed .profilFeed {
+    displa
 }
