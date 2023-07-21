@@ -421,6 +421,8 @@ main .container .kiri .bagMenu .sideBar {
 } 
 
 /* ==================== Feed ======================= */
+
+
 .tengah .feedBox .feed {
     background: var(--color-white);
     border-radius: var(--card-border-radius);
@@ -428,6 +430,26 @@ main .container .kiri .bagMenu .sideBar {
     margin: 1rem 0;
     font-size: 0.85rem;
     line-height: 1.5;
+}
+
+.tengah .feedBox .feed.utas {
+    display: flex;
+    gap: 0.7rem;
+}
+
+
+
+.feed.utas .profil .garisUtas {
+    width: 2px;
+    height: 100%;
+    background: var(--color-gray);
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.feed.utas .konten-utas {
+    flex: 1;
 }
 
 .feed .profilFeed  {
@@ -487,6 +509,39 @@ main .container .kiri .bagMenu .sideBar {
     margin-left: 0;
 }
 
+
+/* ======================== Bagian Kanan ================================= */
+
+main .container .kanan {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+}
+
+.kanan .pesanBox {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.kanan .pesanBox .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.kanan .heading i {
+    font-size: 1.4rem;
+}
+
+.kanan .pesanBox .searchBar {
+    display: flex;
+    background: var(--color-gray);
+    margin-bottom: 1rem;
+    
+}
 
 
 
